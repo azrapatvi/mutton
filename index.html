@@ -18,12 +18,12 @@
       --border: rgba(255,255,255,0.07);
       --text: #f0ebe3;
       --muted: #888;
+      --wa-green: #25D366;
+      --wa-green-dark: #1ebe57;
     }
 
     *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
-
     html { scroll-behavior: smooth; }
-
     body {
       background: var(--bg);
       color: var(--text);
@@ -155,6 +155,17 @@
       background: var(--red-dark);
       transform: translateY(-3px);
       box-shadow: 0 8px 40px rgba(232,37,26,0.55);
+    }
+    /* WhatsApp green button */
+    .btn-whatsapp {
+      background: var(--wa-green);
+      color: #fff;
+      box-shadow: 0 4px 30px rgba(37,211,102,0.4);
+    }
+    .btn-whatsapp:hover {
+      background: var(--wa-green-dark);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 40px rgba(37,211,102,0.55);
     }
     .btn-outline {
       background: transparent;
@@ -432,11 +443,10 @@
       Trusted by families across town for purity, taste, and hygiene.
     </p>
     <div class="hero-btns">
-      <a 
-href="https://wa.me/918329961633?text=Hello%20I%20want%20to%20order%20fresh%20halal%20mutton.%20Please%20share%20today's%20available%20items%20and%20prices." 
-class="btn btn-primary">
-🛒 Order on WhatsApp
-</a>
+      <a href="https://wa.me/918329961633?text=Hello%20I%20want%20to%20order%20fresh%20halal%20mutton.%20Please%20share%20today's%20available%20items%20and%20prices." 
+         class="btn btn-whatsapp">
+        🛒 Order on WhatsApp
+      </a>
       <a href="tel:+918329961633" class="btn btn-outline">
         📞 Call Us
       </a>
@@ -444,219 +454,107 @@ class="btn btn-primary">
   </div>
 </header>
 
-<!-- STATS -->
-<div class="stats-strip">
-  <div class="stat">
-    <span class="stat-num">100%</span>
-    <span class="stat-label">Halal Certified</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num">Daily</span>
-    <span class="stat-label">Fresh Stock</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num">Fast</span>
-    <span class="stat-label">Home Delivery</span>
-  </div>
-  <div class="stat">
-    <span class="stat-num">6+</span>
-    <span class="stat-label">Premium Cuts</span>
-  </div>
-</div>
-
 <!-- PRODUCTS -->
 <section id="products">
-  <span class="sec-label">What We Offer</span>
-  <h2 class="sec-title">Our Premium Cuts</h2>
-  <p class="sec-sub">Every piece is freshly sourced, hygienically prepared, and cut to perfection — ready for your kitchen.</p>
 
   <div class="products-grid">
 
+    <!-- Fresh Mutton -->
     <div class="prod-card">
       <div class="prod-img-wrap">
-        <img 
-          src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=800&auto=format&fit=crop&q=80"
-          alt="Fresh Mutton"
-          onerror="this.src='https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&auto=format&fit=crop&q=80'"
-        >
+        <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=800&auto=format&fit=crop&q=80"
+          alt="Fresh Mutton">
         <span class="prod-tag">Best Seller</span>
       </div>
       <div class="prod-body">
         <h3 class="prod-name">Fresh Mutton</h3>
-        <p class="prod-desc">Freshly cut premium halal mutton, available every morning. Tender, clean, and full of flavour.</p>
+        <p class="prod-desc">Freshly cut premium halal mutton, available every morning.</p>
       </div>
     </div>
 
+    <!-- Boneless -->
     <div class="prod-card">
       <div class="prod-img-wrap">
-        <img 
-          src="https://images.unsplash.com/photo-1529692236671-f1de1e32a53c?w=800&auto=format&fit=crop&q=80"
-          alt="Boneless Mutton"
-          onerror="this.src='https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&auto=format&fit=crop&q=80'"
-        >
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&auto=format&fit=crop&q=80"
+          alt="Boneless Mutton">
       </div>
       <div class="prod-body">
         <h3 class="prod-name">Boneless Mutton</h3>
-        <p class="prod-desc">Soft, clean boneless pieces — perfect for curries, BBQ, and biryanis. No waste, all meat.</p>
+        <p class="prod-desc">Soft boneless pieces perfect for curry and BBQ.</p>
       </div>
     </div>
 
-    <div class="prod-card">
-      <div class="prod-img-wrap">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Paye_ki_nihari.jpg/800px-Paye_ki_nihari.jpg"
-          alt="Paya"
-          onerror="this.src='https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&auto=format&fit=crop&q=80'"
-        >
-      </div>
-      <div class="prod-body">
-        <h3 class="prod-name">Paya</h3>
-        <p class="prod-desc">Fresh paya prepared hygienically. Rich, nourishing, and packed with natural goodness.</p>
-      </div>
-    </div>
+    
 
+    <!-- Mundi -->
     <div class="prod-card">
       <div class="prod-img-wrap">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/Goat_head_curry.jpg/800px-Goat_head_curry.jpg"
-          alt="Mundi"
-          onerror="this.src='https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&auto=format&fit=crop&q=80'"
-        >
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&auto=format&fit=crop&q=80"
+          alt="Mundi">
       </div>
       <div class="prod-body">
         <h3 class="prod-name">Mundi</h3>
-        <p class="prod-desc">Fresh mutton mundi available daily. Cleaned and prepared for delicious traditional recipes.</p>
+        <p class="prod-desc">Cleaned goat head cuts for traditional recipes.</p>
       </div>
     </div>
 
+    <!-- Bheja -->
     <div class="prod-card">
       <div class="prod-img-wrap">
-        <img 
-          src="https://images.unsplash.com/photo-1559847844-d721426d6edc?w=800&auto=format&fit=crop&q=80"
-          alt="Bheja"
-          onerror="this.src='https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=800&auto=format&fit=crop&q=80'"
-        >
+        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=800&auto=format&fit=crop&q=80"
+          alt="Bheja">
       </div>
       <div class="prod-body">
         <h3 class="prod-name">Bheja</h3>
-        <p class="prod-desc">Premium fresh bheja with hygienic preparation. A delicacy loved by true mutton connoisseurs.</p>
+        <p class="prod-desc">Fresh brain fry cut, hygienically handled.</p>
       </div>
     </div>
 
+    <!-- Kaleji -->
     <div class="prod-card">
       <div class="prod-img-wrap">
-        <img 
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Kaleji.jpg/800px-Kaleji.jpg"
-          alt="Kaleji"
-          onerror="this.src='https://images.unsplash.com/photo-1559847844-d721426d6edc?w=800&auto=format&fit=crop&q=80'"
-        >
+        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=800&auto=format&fit=crop&q=80"
+          alt="Kaleji">
         <span class="prod-tag">Popular</span>
       </div>
       <div class="prod-body">
         <h3 class="prod-name">Kaleji</h3>
-        <p class="prod-desc">Fresh premium kaleji, hygienically cleaned and ready to cook. Rich taste, unmatched quality.</p>
+        <p class="prod-desc">Fresh liver, cleaned and ready to cook.</p>
       </div>
     </div>
 
-  </div>
-</section>
-
-<!-- WHY US -->
-<section id="why">
-  <span class="sec-label">Our Promise</span>
-  <h2 class="sec-title">Why Families Trust Us</h2>
-  <p class="sec-sub">We believe quality meat starts with honest sourcing and clean handling — every single day.</p>
-
-  <div class="features-grid">
-    <div class="feature-card">
-      <div class="feat-icon">☪️</div>
-      <h3>100% Halal</h3>
-      <p>Every animal is slaughtered following proper halal guidelines. No compromise, ever.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feat-icon">🌅</div>
-      <h3>Fresh Every Morning</h3>
-      <p>New stock arrives daily at dawn. You always get meat that's cut fresh, never stored overnight.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feat-icon">🧼</div>
-      <h3>Hygienic Handling</h3>
-      <p>Our shop maintains the highest cleanliness standards — clean surfaces, gloves, and sealed packaging.</p>
-    </div>
-    <div class="feature-card">
-      <div class="feat-icon">🛵</div>
-      <h3>Home Delivery</h3>
-      <p>Order on WhatsApp and get fresh mutton delivered right to your doorstep, fast and reliably.</p>
-    </div>
   </div>
 </section>
 
 <!-- GALLERY -->
 <section id="gallery">
-  <span class="sec-label">Our Shop</span>
-  <h2 class="sec-title">Fresh From the Block</h2>
-  <p class="sec-sub">A glimpse of the freshness and quality we serve every day.</p>
 
   <div class="gallery-grid">
+
     <div class="gal-item big">
-      <img 
-        src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=1000&auto=format&fit=crop&q=80"
-        alt="Mutton shop"
-        style="min-height: 460px;"
-      >
+      <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?w=1000&auto=format&fit=crop&q=80"
+        alt="Shop">
     </div>
+
     <div class="gal-item">
-      <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=600&auto=format&fit=crop&q=80" alt="Fresh mutton cuts" style="min-height:218px;">
+      <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=600&auto=format&fit=crop&q=80"
+        alt="Mutton">
     </div>
+
     <div class="gal-item">
-      <img src="https://images.unsplash.com/photo-1529692236671-f1de1e32a53c?w=600&auto=format&fit=crop&q=80" alt="Boneless mutton" style="min-height:218px;">
+      <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?w=600&auto=format&fit=crop&q=80"
+        alt="Meat">
     </div>
+
+  
+
     <div class="gal-item">
-      <img src="https://images.unsplash.com/photo-1559847844-d721426d6edc?w=600&auto=format&fit=crop&q=80" alt="Premium cuts" style="min-height:218px;">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80"
+        alt="Kaleji">
     </div>
-    <div class="gal-item">
-      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&auto=format&fit=crop&q=80" alt="Meat preparation" style="min-height:218px;"
-        onerror="this.src='https://images.unsplash.com/photo-1603048297172-c92544798d5a?w=600&auto=format&fit=crop&q=80'">
-    </div>
+
   </div>
 </section>
-
-<!-- CTA -->
-<section class="cta-section" id="contact">
-  <span class="sec-label">Get in Touch</span>
-  <h2>Order Fresh Halal Mutton <span>Today</span></h2>
-  <p>
-    Message us on WhatsApp or give us a call.
-    We'll have your fresh halal meat ready for pickup or deliver it straight to your home.
-  </p>
-  <div class="hero-btns">
-    <a 
-href="https://wa.me/918329961633?text=Hello%20I%20want%20to%20order%20fresh%20halal%20mutton.%20Please%20share%20today's%20available%20items%20and%20prices." 
-class="btn btn-primary">
-🛒 Order on WhatsApp
-</a>
-    <a href="tel:+918329961633" class="btn btn-outline">
-      📞 +91 83299 61633
-    </a>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-inner">
-    <div class="footer-brand">
-      <h3>Mogal Mutton Shop</h3>
-      <p>Fresh Halal Meat • Trusted Quality • Daily Fresh Stock</p>
-    </div>
-    <div class="footer-contact">
-      <a href="tel:+918329961633">📞 +91 83299 61633</a>
-      <a href="https://wa.me/918329961633">💬 WhatsApp Order</a>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    © 2026 Mogal Mutton Shop — All Rights Reserved
-  </div>
-</footer>
 
 </body>
 </html>
